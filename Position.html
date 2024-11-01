@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(217, 177, 255);
+            margin: 10px;
+        }
+        
+        .two {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: rgb(255, 201, 201);
+        }
+        
+        .three {
+            position: absolute;
+            background-color: aqua;
+            right: 50%;
+            bottom: 50%;
+        }
+        
+        .four {
+            position: fixed;
+            background-color: rgb(140, 255, 0);
+            top: 0;
+            right: 0;
+        }
+        
+        .five {
+            position: sticky;
+            background-color: rgb(185, 252, 255);
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">Static</div>
+
+    <div class="two">Relative
+        <div class="three">Absolute</div>
+    </div>
+
+    <div class="four">Fixed</div>
+
+    <div class="five">Sticky</div>
+</body>
+
+</html>

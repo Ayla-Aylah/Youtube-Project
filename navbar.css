@@ -1,0 +1,134 @@
+.nav-bar {
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    width: 80px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.mid-section {
+    flex: 1;
+    max-width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section {
+    width: 130px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.logo {
+    width: 115px;
+}
+
+.fa-bars {
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+.fa-solid {
+    font-size: 20px;
+}
+
+.fa-bell {
+    font-size: 20px;
+}
+
+.fa-microphone {
+    background-color: aliceblue;
+    padding: 10px 12px;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+
+input {
+    flex: 1;
+    border: 1px solid grey;
+    height: 30px;
+    outline: none;
+    font-size: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 10px;
+    width: 0;
+}
+
+.fa-magnifying-glass {
+    border: 1px solid grey;
+    padding: 4.5px 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.tooltip-container {
+    position: relative;
+    z-index: 10;
+}
+
+.tooltip-container p {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    opacity: 0;
+}
+
+input:focus {
+    outline: 1px black;
+}
+
+.tooltip-container:hover.tooltip-container p {
+    opacity: 1;
+}
+
+.fa-bars,
+.fa-microphone,
+.fa-video,
+.fa-bell {
+    background-color: rgba(203, 203, 203, 0);
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.fa-magnifying-glass {
+    border: 1px solid grey;
+    padding: 4.5px 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.fa-bars:hover,
+.fa-microphone:hover,
+.fa-video:hover,
+.fa-bell:hover {
+    background-color: rgb(236, 236, 236);
+}
